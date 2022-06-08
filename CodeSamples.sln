@@ -21,21 +21,22 @@ Global
 		ida64 Release|x86 = ida64 Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Debug|x64.ActiveCfg = Debug|x64
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Debug|x86.ActiveCfg = Debug|Win32
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Debug|x86.Build.0 = Debug|Win32
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Release|x64.ActiveCfg = Release|x64
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Release|x64.Build.0 = Release|x64
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Release|x86.ActiveCfg = Release|Win32
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Release|x86.Build.0 = Release|Win32
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Debug|x64.ActiveCfg = Debug|x64
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Debug|x64.Build.0 = Debug|x64
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Debug|x86.ActiveCfg = Debug|x64
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Debug|x86.Build.0 = Debug|x64
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Release|x64.ActiveCfg = Release|x64
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Release|x64.Build.0 = Release|x64
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Release|x86.ActiveCfg = Release|x64
-		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Release|x86.Build.0 = Release|x64
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Debug|x64.ActiveCfg = ida32 Debug|x64
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Debug|x64.Build.0 = ida32 Debug|x64
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Debug|x86.ActiveCfg = ida32 Debug|Win32
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Debug|x86.Build.0 = ida32 Debug|Win32
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Release|x64.ActiveCfg = ida32 Release|x64
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Release|x64.Build.0 = ida32 Release|x64
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Release|x86.ActiveCfg = ida32 Release|Win32
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida32 Release|x86.Build.0 = ida32 Release|Win32
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Debug|x64.ActiveCfg = ida64 Debug|x64
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Debug|x64.Build.0 = ida64 Debug|x64
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Debug|x86.ActiveCfg = ida64 Debug|Win32
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Debug|x86.Build.0 = ida64 Debug|Win32
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Release|x64.ActiveCfg = ida64 Release|x64
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Release|x64.Build.0 = ida64 Release|x64
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Release|x86.ActiveCfg = ida64 Release|Win32
+		{6D62A2EC-5004-4A7D-B06C-82485BAF8AD8}.ida64 Release|x86.Build.0 = ida64 Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
