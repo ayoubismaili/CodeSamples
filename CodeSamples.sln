@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProcessorIdPlugin", "IDA Pr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProcessStatePlugin", "IDA Pro\7.7\ProcessStatePlugin\ProcessStatePlugin.vcxproj", "{5611811D-E86B-4866-ADF1-A314B5353E95}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StartProcessPlugin", "IDA Pro\7.7\StartProcessPlugin\StartProcessPlugin.vcxproj", "{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		ida32 Debug|x64 = ida32 Debug|x64
@@ -87,6 +89,22 @@ Global
 		{5611811D-E86B-4866-ADF1-A314B5353E95}.ida64 Release|x64.Build.0 = ida64 Release|x64
 		{5611811D-E86B-4866-ADF1-A314B5353E95}.ida64 Release|x86.ActiveCfg = ida64 Release|Win32
 		{5611811D-E86B-4866-ADF1-A314B5353E95}.ida64 Release|x86.Build.0 = ida64 Release|Win32
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida32 Debug|x64.ActiveCfg = ida32 Debug|x64
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida32 Debug|x64.Build.0 = ida32 Debug|x64
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida32 Debug|x86.ActiveCfg = ida32 Debug|Win32
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida32 Debug|x86.Build.0 = ida32 Debug|Win32
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida32 Release|x64.ActiveCfg = ida32 Release|x64
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida32 Release|x64.Build.0 = ida32 Release|x64
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida32 Release|x86.ActiveCfg = ida32 Release|Win32
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida32 Release|x86.Build.0 = ida32 Release|Win32
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida64 Debug|x64.ActiveCfg = ida64 Debug|x64
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida64 Debug|x64.Build.0 = ida64 Debug|x64
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida64 Debug|x86.ActiveCfg = ida64 Debug|Win32
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida64 Debug|x86.Build.0 = ida64 Debug|Win32
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida64 Release|x64.ActiveCfg = ida64 Release|x64
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida64 Release|x64.Build.0 = ida64 Release|x64
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida64 Release|x86.ActiveCfg = ida64 Release|Win32
+		{CA2FB1D6-64AC-4F69-949E-C0D1FA8B0823}.ida64 Release|x86.Build.0 = ida64 Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
