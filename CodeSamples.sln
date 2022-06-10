@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PluginSample", "IDA Pro\7.7
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CalleePlugin", "IDA Pro\7.7\CalleePlugin\CalleePlugin.vcxproj", "{2AA97ABB-3E38-4DD5-A227-4556A2C2DC79}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProcessorIdPlugin", "IDA Pro\7.7\ProcessorIdPlugin\ProcessorIdPlugin.vcxproj", "{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		ida32 Debug|x64 = ida32 Debug|x64
@@ -51,6 +53,22 @@ Global
 		{2AA97ABB-3E38-4DD5-A227-4556A2C2DC79}.ida64 Release|x64.Build.0 = ida64 Release|x64
 		{2AA97ABB-3E38-4DD5-A227-4556A2C2DC79}.ida64 Release|x86.ActiveCfg = ida64 Release|Win32
 		{2AA97ABB-3E38-4DD5-A227-4556A2C2DC79}.ida64 Release|x86.Build.0 = ida64 Release|Win32
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida32 Debug|x64.ActiveCfg = ida32 Debug|x64
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida32 Debug|x64.Build.0 = ida32 Debug|x64
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida32 Debug|x86.ActiveCfg = ida32 Debug|Win32
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida32 Debug|x86.Build.0 = ida32 Debug|Win32
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida32 Release|x64.ActiveCfg = ida32 Release|x64
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida32 Release|x64.Build.0 = ida32 Release|x64
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida32 Release|x86.ActiveCfg = ida32 Release|Win32
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida32 Release|x86.Build.0 = ida32 Release|Win32
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida64 Debug|x64.ActiveCfg = ida64 Debug|x64
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida64 Debug|x64.Build.0 = ida64 Debug|x64
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida64 Debug|x86.ActiveCfg = ida64 Debug|Win32
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida64 Debug|x86.Build.0 = ida64 Debug|Win32
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida64 Release|x64.ActiveCfg = ida64 Release|x64
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida64 Release|x64.Build.0 = ida64 Release|x64
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida64 Release|x86.ActiveCfg = ida64 Release|Win32
+		{46BFCE18-60BE-43CE-A9EC-6BCE1EE4B476}.ida64 Release|x86.Build.0 = ida64 Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
