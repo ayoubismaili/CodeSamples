@@ -1,0 +1,63 @@
+<script>
+	<call>
+	  <source>dbg</source>
+	  <name>add_bpt</name>
+	  <args>
+		<value type="ea_t">0x00000000</value>
+		<value type="asize_t">0x00000000</value>
+		<value type="bpttype_t">0x00000000</value>
+	  </args>
+	</call>
+	<call>
+	  <source>dbg</source>
+	  <name>start_process</name>
+	  <args>
+	  </args>
+	</call>
+	<call>
+	  <source>dbg</source>
+	  <name>del_bpt</name>
+	  <args>
+		<value type="ea_t">0x00000000</value>
+	  </args>
+	</call>
+	<call>
+	  <source>dbg</source>
+	  <name>add_bpt</name>
+	  <args>
+		<value type="ea_t">0x00000000</value>
+		<value type="asize_t">0x00000000</value>
+		<value type="bpttype_t">0x00000000</value>
+	  </args>
+	</call>
+	<call>
+	  <source>dbg</source>
+	  <name>continue_process</name>
+	  <args>
+	  </args>
+	</call>
+
+	<call>
+	  <source>dbg</source>
+	  <name>del_bpt</name>
+	  <args>
+		<value type="ea_t">0x00000000</value>
+	  </args>
+	</call>
+	<call>
+	  <source>dbg</source>
+	  <name>add_bpt</name>
+	  <args>
+		<value type="ea_t">0x00000000</value>
+		<value type="asize_t">0x00000000</value>
+		<value type="bpttype_t">0x00000000</value>
+	  </args>
+	</call>
+	<call>
+	  <source>dbg</source>
+	  <name>continue_process</name>
+	  <args>
+	  </args>
+	</call>
+
+</script>
