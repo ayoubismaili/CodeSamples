@@ -29,8 +29,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ca12f11b-ab85-4b45-b70d-85d1aee80b90}</ProjectGuid>
-    <RootNamespace>LangImpl04</RootNamespace>
+    <ProjectGuid>{fc6ef1ff-e17f-4b6f-82a0-abee6b967995}</ProjectGuid>
+    <RootNamespace>itrace</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -60,7 +60,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='pin64 Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -79,23 +79,39 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='pin64 Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='pin64 Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='pin64 Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <IncludePath />
+    <ExternalIncludePath />
+    <ReferencePath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -142,7 +158,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\WindowsReverseTools\LLVM 14.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,13 +168,23 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;TARGET_WINDOWS;PIN_CRT=1;_WINDOWS_H_PATH_="C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um";__LP64__;TARGET_IA32E;HOST_IA32E</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\WindowsReverseTools\LLVM 14.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(PIN_ROOT)/source/include/pin;$(PIN_ROOT)/source/include/pin/gen;$(PIN_ROOT)/extras/stlport/include;$(PIN_ROOT)/extras;$(PIN_ROOT)/extras/libstdc++/include;$(PIN_ROOT)/extras/crt/include;$(PIN_ROOT)/extras/crt;$(PIN_ROOT)/extras/crt/include/arch-x86_64;$(PIN_ROOT)/extras/crt/include/kernel/uapi;$(PIN_ROOT)/extras/crt/include/kernel/uapi/asm-x86;$(PIN_ROOT)/extras/components/include;$(PIN_ROOT)/extras/xed-intel64/include/xed;$(PIN_ROOT)/source/tools/Utils;$(PIN_ROOT)/source/tools/InstLib;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um</AdditionalIncludeDirectories>
+      <ShowIncludes>true</ShowIncludes>
+      <ForcedIncludeFiles>include/msvc_compat.h</ForcedIncludeFiles>
+      <DisableSpecificWarnings>4530;5208</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>Ptrace_DllMainCRTStartup</EntryPointSymbol>
+      <BaseAddress>0xC5000000</BaseAddress>
+      <AdditionalLibraryDirectories>$(PIN_ROOT)/intel64/lib;$(PIN_ROOT)/intel64/lib-ext;$(PIN_ROOT)/intel64/runtime/pincrt;$(PIN_ROOT)/extras/xed-intel64/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pin.lib;xed.lib;pincrt.lib;kernel32.lib</AdditionalDependencies>
+      <AdditionalOptions>/EXPORT:main %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -179,10 +204,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="toy.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="KaleidoscopeJIT.h" />
+    <ClCompile Include="itrace.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
