@@ -167,15 +167,20 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='pin64 Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;TARGET_WINDOWS;PIN_CRT=1;_WINDOWS_H_PATH_="C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um";__LP64__;TARGET_IA32E;HOST_IA32E</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <ExceptionHandling>false</ExceptionHandling>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(PIN_ROOT)/source/include/pin;$(PIN_ROOT)/source/include/pin/gen;$(PIN_ROOT)/extras/stlport/include;$(PIN_ROOT)/extras;$(PIN_ROOT)/extras/libstdc++/include;$(PIN_ROOT)/extras/crt/include;$(PIN_ROOT)/extras/crt;$(PIN_ROOT)/extras/crt/include/arch-x86_64;$(PIN_ROOT)/extras/crt/include/kernel/uapi;$(PIN_ROOT)/extras/crt/include/kernel/uapi/asm-x86;$(PIN_ROOT)/extras/components/include;$(PIN_ROOT)/extras/xed-intel64/include/xed;$(PIN_ROOT)/source/tools/Utils;$(PIN_ROOT)/source/tools/InstLib;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(PIN_ROOT)/source/include/pin;$(PIN_ROOT)/source/include/pin/gen;$(PIN_ROOT)/extras/stlport/include;$(PIN_ROOT)/extras;$(PIN_ROOT)/extras/libstdc++/include;$(PIN_ROOT)/extras/crt/include;$(PIN_ROOT)/extras/crt;$(PIN_ROOT)/extras/crt/include/arch-x86_64;$(PIN_ROOT)/extras/crt/include/kernel/uapi;$(PIN_ROOT)/extras/crt/include/kernel/uapi/asm-x86;$(PIN_ROOT)/extras/components/include;$(PIN_ROOT)/extras/xed-intel64/include/xed;$(PIN_ROOT)/source/tools/Utils;$(PIN_ROOT)/source/tools/InstLib</AdditionalIncludeDirectories>
       <ShowIncludes>true</ShowIncludes>
       <ForcedIncludeFiles>include/msvc_compat.h</ForcedIncludeFiles>
       <DisableSpecificWarnings>4530;5208</DisableSpecificWarnings>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -184,7 +189,9 @@
       <BaseAddress>0xC5000000</BaseAddress>
       <AdditionalLibraryDirectories>$(PIN_ROOT)/intel64/lib;$(PIN_ROOT)/intel64/lib-ext;$(PIN_ROOT)/intel64/runtime/pincrt;$(PIN_ROOT)/extras/xed-intel64/lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>pin.lib;xed.lib;pincrt.lib;kernel32.lib</AdditionalDependencies>
-      <AdditionalOptions>/EXPORT:main %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/EXPORT:main "$(PIN_ROOT)/intel64/runtime/pincrt/crtbeginS.obj" %(AdditionalOptions)</AdditionalOptions>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
