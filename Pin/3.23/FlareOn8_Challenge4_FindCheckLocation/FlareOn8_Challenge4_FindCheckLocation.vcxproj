@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="pin32 Debug|Win32">
+      <Configuration>pin32 Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="pin32 Release|Win32">
+      <Configuration>pin32 Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="pin64 Debug|x64">
+      <Configuration>pin64 Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="pin64 Release|x64">
+      <Configuration>pin64 Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{998FA768-E74F-422F-91F8-C76C44722143}</ProjectGuid>
+    <RootNamespace>FlareOn8_Challenge4_FindCheckLocation</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='pin32 Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='pin32 Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='pin64 Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='pin64 Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='pin32 Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='pin64 Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='pin64 Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='pin32 Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='pin64 Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath />
+    <ExternalIncludePath />
+    <ReferencePath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='pin64 Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath />
+    <ExternalIncludePath />
+    <ReferencePath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='pin32 Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath />
+    <ExternalIncludePath />
+    <ReferencePath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='pin32 Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath />
+    <ExternalIncludePath />
+    <ReferencePath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='pin32 Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;TARGET_WINDOWS;PIN_CRT=1;_WINDOWS_H_PATH_="C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um";__i386__;TARGET_IA32;HOST_IA32</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(PIN_ROOT)/source/include/pin;$(PIN_ROOT)/source/include/pin/gen;$(PIN_ROOT)/extras/stlport/include;$(PIN_ROOT)/extras;$(PIN_ROOT)/extras/libstdc++/include;$(PIN_ROOT)/extras/crt/include;$(PIN_ROOT)/extras/crt;$(PIN_ROOT)/extras/crt/include/arch-x86;$(PIN_ROOT)/extras/crt/include/kernel/uapi;$(PIN_ROOT)/extras/crt/include/kernel/uapi/asm-x86;$(PIN_ROOT)/extras/components/include;$(PIN_ROOT)/extras/xed-ia32/include/xed;$(PIN_ROOT)/source/tools/Utils;$(PIN_ROOT)/source/tools/InstLib</AdditionalIncludeDirectories>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <DisableSpecificWarnings>4530;5208</DisableSpecificWarnings>
+      <ForcedIncludeFiles>include/msvc_compat.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(PIN_ROOT)/ia32/lib;$(PIN_ROOT)/ia32/lib-ext;$(PIN_ROOT)/ia32/runtime/pincrt;$(PIN_ROOT)/extras/xed-ia32/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pin.lib;xed.lib;pincrt.lib;kernel32.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OptimizeReferences>true</OptimizeReferences>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <EntryPointSymbol>Ptrace_DllMainCRTStartup@12</EntryPointSymbol>
+      <BaseAddress>0x55000000</BaseAddress>
+      <AdditionalOptions>/EXPORT:main "$(PIN_ROOT)/ia32/runtime/pincrt/crtbeginS.obj" %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='pin64 Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;TARGET_WINDOWS;PIN_CRT=1;_WINDOWS_H_PATH_="C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um";__LP64__;TARGET_IA32E;HOST_IA32E</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(PIN_ROOT)/source/include/pin;$(PIN_ROOT)/source/include/pin/gen;$(PIN_ROOT)/extras/stlport/include;$(PIN_ROOT)/extras;$(PIN_ROOT)/extras/libstdc++/include;$(PIN_ROOT)/extras/crt/include;$(PIN_ROOT)/extras/crt;$(PIN_ROOT)/extras/crt/include/arch-x86_64;$(PIN_ROOT)/extras/crt/include/kernel/uapi;$(PIN_ROOT)/extras/crt/include/kernel/uapi/asm-x86;$(PIN_ROOT)/extras/components/include;$(PIN_ROOT)/extras/xed-intel64/include/xed;$(PIN_ROOT)/source/tools/Utils;$(PIN_ROOT)/source/tools/InstLib</AdditionalIncludeDirectories>
+      <ShowIncludes>false</ShowIncludes>
+      <ForcedIncludeFiles>include/msvc_compat.h</ForcedIncludeFiles>
+      <DisableSpecificWarnings>4530;5208</DisableSpecificWarnings>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>Ptrace_DllMainCRTStartup</EntryPointSymbol>
+      <BaseAddress>0xC5000000</BaseAddress>
+      <AdditionalLibraryDirectories>$(PIN_ROOT)/intel64/lib;$(PIN_ROOT)/intel64/lib-ext;$(PIN_ROOT)/intel64/runtime/pincrt;$(PIN_ROOT)/extras/xed-intel64/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pin.lib;xed.lib;pincrt.lib;kernel32.lib</AdditionalDependencies>
+      <AdditionalOptions>/EXPORT:main "$(PIN_ROOT)/intel64/runtime/pincrt/crtbeginS.obj" %(AdditionalOptions)</AdditionalOptions>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OptimizeReferences>true</OptimizeReferences>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='pin64 Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;TARGET_WINDOWS;PIN_CRT=1;_WINDOWS_H_PATH_="C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um";__LP64__;TARGET_IA32E;HOST_IA32E;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(PIN_ROOT)/source/include/pin;$(PIN_ROOT)/source/include/pin/gen;$(PIN_ROOT)/extras/stlport/include;$(PIN_ROOT)/extras;$(PIN_ROOT)/extras/libstdc++/include;$(PIN_ROOT)/extras/crt/include;$(PIN_ROOT)/extras/crt;$(PIN_ROOT)/extras/crt/include/arch-x86_64;$(PIN_ROOT)/extras/crt/include/kernel/uapi;$(PIN_ROOT)/extras/crt/include/kernel/uapi/asm-x86;$(PIN_ROOT)/extras/components/include;$(PIN_ROOT)/extras/xed-intel64/include/xed;$(PIN_ROOT)/source/tools/Utils;$(PIN_ROOT)/source/tools/InstLib</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <DisableSpecificWarnings>4530;5208</DisableSpecificWarnings>
+      <ForcedIncludeFiles>include/msvc_compat.h</ForcedIncludeFiles>
+      <CompileAsManaged>false</CompileAsManaged>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(PIN_ROOT)/intel64/lib;$(PIN_ROOT)/intel64/lib-ext;$(PIN_ROOT)/intel64/runtime/pincrt;$(PIN_ROOT)/extras/xed-intel64/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pin.lib;xed.lib;pincrt.lib;kernel32.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <EntryPointSymbol>Ptrace_DllMainCRTStartup</EntryPointSymbol>
+      <BaseAddress>0xC5000000</BaseAddress>
+      <AdditionalOptions>/EXPORT:main "$(PIN_ROOT)/intel64/runtime/pincrt/crtbeginS.obj" %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='pin32 Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;TARGET_WINDOWS;PIN_CRT=1;_WINDOWS_H_PATH_="C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um";__i386__;TARGET_IA32;HOST_IA32</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(PIN_ROOT)/source/include/pin;$(PIN_ROOT)/source/include/pin/gen;$(PIN_ROOT)/extras/stlport/include;$(PIN_ROOT)/extras;$(PIN_ROOT)/extras/libstdc++/include;$(PIN_ROOT)/extras/crt/include;$(PIN_ROOT)/extras/crt;$(PIN_ROOT)/extras/crt/include/arch-x86;$(PIN_ROOT)/extras/crt/include/kernel/uapi;$(PIN_ROOT)/extras/crt/include/kernel/uapi/asm-x86;$(PIN_ROOT)/extras/components/include;$(PIN_ROOT)/extras/xed-ia32/include/xed;$(PIN_ROOT)/source/tools/Utils;$(PIN_ROOT)/source/tools/InstLib</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <DisableSpecificWarnings>4530;5208</DisableSpecificWarnings>
+      <ForcedIncludeFiles>include/msvc_compat.h</ForcedIncludeFiles>
+      <CompileAsManaged>false</CompileAsManaged>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(PIN_ROOT)/ia32/lib;$(PIN_ROOT)/ia32/lib-ext;$(PIN_ROOT)/ia32/runtime/pincrt;$(PIN_ROOT)/extras/xed-ia32/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pin.lib;xed.lib;pincrt.lib;kernel32.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <EntryPointSymbol>Ptrace_DllMainCRTStartup@12</EntryPointSymbol>
+      <BaseAddress>0x55000000</BaseAddress>
+      <AdditionalOptions>/EXPORT:main "$(PIN_ROOT)/ia32/runtime/pincrt/crtbeginS.obj" %(AdditionalOptions)</AdditionalOptions>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="FindCheckLocation.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
