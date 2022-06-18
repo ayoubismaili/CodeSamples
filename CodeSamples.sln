@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LangImpl04", "LLVM\14.0.0\L
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "itrace", "Pin\3.23\itrace\itrace.vcxproj", "{FC6EF1FF-E17F-4B6F-82A0-ABEE6B967995}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FindStringInRegister", "Pin\3.23\FindStringInRegister\FindStringInRegister.vcxproj", "{6D182CA4-10AA-45CF-AB07-8AB182CC2358}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -528,6 +530,54 @@ Global
 		{FC6EF1FF-E17F-4B6F-82A0-ABEE6B967995}.Release|x64.Build.0 = Release|x64
 		{FC6EF1FF-E17F-4B6F-82A0-ABEE6B967995}.Release|x86.ActiveCfg = Release|Win32
 		{FC6EF1FF-E17F-4B6F-82A0-ABEE6B967995}.Release|x86.Build.0 = Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.Debug|x64.ActiveCfg = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.Debug|x64.Build.0 = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.Debug|x86.ActiveCfg = pin32 Debug|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.Debug|x86.Build.0 = pin32 Debug|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida32 Debug|x64.ActiveCfg = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida32 Debug|x64.Build.0 = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida32 Debug|x86.ActiveCfg = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida32 Debug|x86.Build.0 = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida32 Release|x64.ActiveCfg = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida32 Release|x64.Build.0 = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida32 Release|x86.ActiveCfg = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida32 Release|x86.Build.0 = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida64 Debug|x64.ActiveCfg = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida64 Debug|x64.Build.0 = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida64 Debug|x86.ActiveCfg = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida64 Debug|x86.Build.0 = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida64 Release|x64.ActiveCfg = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida64 Release|x64.Build.0 = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida64 Release|x86.ActiveCfg = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.ida64 Release|x86.Build.0 = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.llvm64 Debug|x64.ActiveCfg = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.llvm64 Debug|x64.Build.0 = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.llvm64 Debug|x86.ActiveCfg = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.llvm64 Debug|x86.Build.0 = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.llvm64 Release|x64.ActiveCfg = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.llvm64 Release|x64.Build.0 = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.llvm64 Release|x86.ActiveCfg = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.llvm64 Release|x86.Build.0 = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin32 Debug|x64.ActiveCfg = pin32 Debug|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin32 Debug|x64.Build.0 = pin32 Debug|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin32 Debug|x86.ActiveCfg = pin32 Debug|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin32 Debug|x86.Build.0 = pin32 Debug|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin32 Release|x64.ActiveCfg = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin32 Release|x64.Build.0 = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin32 Release|x86.ActiveCfg = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin32 Release|x86.Build.0 = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin64 Debug|x64.ActiveCfg = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin64 Debug|x64.Build.0 = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin64 Debug|x86.ActiveCfg = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin64 Debug|x86.Build.0 = pin64 Debug|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin64 Release|x64.ActiveCfg = pin64 Release|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin64 Release|x64.Build.0 = pin64 Release|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin64 Release|x86.ActiveCfg = pin64 Release|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.pin64 Release|x86.Build.0 = pin64 Release|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.Release|x64.ActiveCfg = pin64 Release|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.Release|x64.Build.0 = pin64 Release|x64
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.Release|x86.ActiveCfg = pin32 Release|Win32
+		{6D182CA4-10AA-45CF-AB07-8AB182CC2358}.Release|x86.Build.0 = pin32 Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
