@@ -19,4 +19,8 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="find_location_1.txt" />
+    <Text Include="find_location_2.txt" />
+  </ItemGroup>
 </Project>
