@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlareOn8_Challenge4_FindChe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RtnNameTracing", "Pin\3.23\RtnNameTracing\RtnNameTracing.vcxproj", "{E071D6A5-03B0-438B-8270-93EA66B0A92C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InstructionLoggerPlugin", "IDA Pro\7.7\InstructionLoggerPlugin\InstructionLoggerPlugin.vcxproj", "{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -678,6 +680,54 @@ Global
 		{E071D6A5-03B0-438B-8270-93EA66B0A92C}.Release|x64.Build.0 = pin64 Release|x64
 		{E071D6A5-03B0-438B-8270-93EA66B0A92C}.Release|x86.ActiveCfg = pin32 Release|Win32
 		{E071D6A5-03B0-438B-8270-93EA66B0A92C}.Release|x86.Build.0 = pin32 Release|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.Debug|x64.ActiveCfg = ida32 Debug|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.Debug|x64.Build.0 = ida32 Debug|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.Debug|x86.ActiveCfg = ida32 Debug|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.Debug|x86.Build.0 = ida32 Debug|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida32 Debug|x64.ActiveCfg = ida32 Debug|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida32 Debug|x64.Build.0 = ida32 Debug|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida32 Debug|x86.ActiveCfg = ida32 Debug|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida32 Debug|x86.Build.0 = ida32 Debug|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida32 Release|x64.ActiveCfg = ida32 Release|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida32 Release|x64.Build.0 = ida32 Release|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida32 Release|x86.ActiveCfg = ida32 Release|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida32 Release|x86.Build.0 = ida32 Release|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida64 Debug|x64.ActiveCfg = ida64 Debug|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida64 Debug|x64.Build.0 = ida64 Debug|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida64 Debug|x86.ActiveCfg = ida64 Debug|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida64 Debug|x86.Build.0 = ida64 Debug|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida64 Release|x64.ActiveCfg = ida64 Release|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida64 Release|x64.Build.0 = ida64 Release|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida64 Release|x86.ActiveCfg = ida64 Release|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.ida64 Release|x86.Build.0 = ida64 Release|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.llvm64 Debug|x64.ActiveCfg = ida32 Debug|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.llvm64 Debug|x64.Build.0 = ida32 Debug|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.llvm64 Debug|x86.ActiveCfg = ida32 Debug|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.llvm64 Debug|x86.Build.0 = ida32 Debug|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.llvm64 Release|x64.ActiveCfg = ida32 Debug|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.llvm64 Release|x64.Build.0 = ida32 Debug|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.llvm64 Release|x86.ActiveCfg = ida32 Debug|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.llvm64 Release|x86.Build.0 = ida32 Debug|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin32 Debug|x64.ActiveCfg = pin32 Debug|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin32 Debug|x64.Build.0 = pin32 Debug|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin32 Debug|x86.ActiveCfg = pin32 Debug|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin32 Debug|x86.Build.0 = pin32 Debug|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin32 Release|x64.ActiveCfg = pin32 Release|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin32 Release|x64.Build.0 = pin32 Release|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin32 Release|x86.ActiveCfg = pin32 Release|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin32 Release|x86.Build.0 = pin32 Release|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin64 Debug|x64.ActiveCfg = pin64 Debug|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin64 Debug|x64.Build.0 = pin64 Debug|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin64 Debug|x86.ActiveCfg = pin64 Debug|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin64 Debug|x86.Build.0 = pin64 Debug|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin64 Release|x64.ActiveCfg = pin64 Release|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin64 Release|x64.Build.0 = pin64 Release|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin64 Release|x86.ActiveCfg = pin64 Release|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.pin64 Release|x86.Build.0 = pin64 Release|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.Release|x64.ActiveCfg = pin64 Release|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.Release|x64.Build.0 = pin64 Release|x64
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.Release|x86.ActiveCfg = pin64 Release|Win32
+		{C8D1C21A-A95D-4E6E-93B7-FDC1C8D4A5FD}.Release|x86.Build.0 = pin64 Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
