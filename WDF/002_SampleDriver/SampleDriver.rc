@@ -1,0 +1,26 @@
+/*++
+
+Copyright (c) Ayoub Ismaili.  All rights reserved.
+
+SPDX-License-Identifier: MIT
+
+
+Module Name:
+
+    SampleDriver.rc
+
+--*/
+
+#include <windows.h>
+#include <ntverp.h>
+#define VER_FILETYPE    VFT_DRV
+#define VER_FILESUBTYPE VFT2_DRV_SYSTEM
+#define VER_FILEDESCRIPTION_STR     "Sample Kernel Mode Driver"
+#define VER_INTERNALNAME_STR        "SampleDriver.sys"
+#define VER_ORIGINALFILENAME_STR    "SampleDriver.sys"
+
+#include "common.ver"
+
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+
+

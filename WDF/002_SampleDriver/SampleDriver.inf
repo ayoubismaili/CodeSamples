@@ -1,0 +1,81 @@
+;
+; SampleDriver.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System ; TODO: specify appropriate Class
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=SampleDriver.cat
+DriverVer = 09/23/2022,4.44.53.501
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+SampleDriver_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+SampleDriver.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%SampleDriver.DeviceDesc%=SampleDriver_Device, PCI\VEN_1B36&DEV_0002 ; TODO: edit hw-id
+
+[SampleDriver_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+SampleDriver.sys
+
+;-------------- Service installation
+[SampleDriver_Device.NT.Services]
+AddService = SampleDriver,%SPSVCINST_ASSOCSERVICE%, SampleDriver_Service_Inst
+
+; -------------- SampleDriver driver install sections
+[SampleDriver_Service_Inst]
+DisplayName    = %SampleDriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\SampleDriver.sys
+
+;
+;--- SampleDriver_Device Coinstaller installation ------
+;
+
+[SampleDriver_Device.NT.CoInstallers]
+AddReg=SampleDriver_Device_CoInstaller_AddReg
+CopyFiles=SampleDriver_Device_CoInstaller_CopyFiles
+
+[SampleDriver_Device_CoInstaller_AddReg]
+;
+
+
+[SampleDriver_Device_CoInstaller_CopyFiles]
+;
+
+
+[SampleDriver_Device.NT.Wdf]
+KmdfService =  SampleDriver, SampleDriver_wdfsect
+[SampleDriver_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Sample Drivers, LLC" ;TODO: Replace with your manufacturer name
+DiskName = "SampleDriver Installation Disk"
+SampleDriver.DeviceDesc = "SampleDriver Device"
+SampleDriver.SVCDESC = "SampleDriver Service"
+
