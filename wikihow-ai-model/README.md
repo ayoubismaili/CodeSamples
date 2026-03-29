@@ -55,4 +55,8 @@ Troubleshooting and Notes
 - Tokenizer fixes: `03_merge/merge.py` fetches the reference tokenizer (`HuggingFaceTB/SmolLM2-135M-Instruct`) and ensures `pad_token` is set to `eos_token` to avoid tokenization issues.
 - Large files: these scripts expect model and data files that can be large; use `git-lfs` or external storage rather than committing heavy artifacts.
 
+### Download — Pretrained model
+- You can download the pretrained/converted model (if made available) from the Hugging Face repo:
+  - `https://huggingface.co/ayoubismaili/wikihow-ai-model`
+
 If you want the README adapted to a custom path layout, tell me the paths you prefer and I will update it.
