@@ -2,7 +2,7 @@
 
 This README documents the real, repository-contained workflow (steps 0–5) using the scripts in the `wikihow-ai-model` subdirectories. Follow the commands below (adjust paths if you did not use the `/opt/wikihow-ai-model` layout).
 
-Step 0: Setting Up the Environment
+### Step 0 — Setting Up the Environment
 - The repository includes a setup script at `00_venv/env.sh` that installs system packages and creates a virtual environment for this project. It targets Python 3.10 and installs required Python packages:
   - Run as root on Debian/Ubuntu systems (example):
     - `bash 00_venv/env.sh`
@@ -10,12 +10,12 @@ Step 0: Setting Up the Environment
     - `source /opt/wikihow-ai-model/00_venv/bin/activate`
 - If you prefer manual setup, ensure Python 3.10, pip, and the packages `transformers`, `datasets`, `peft`, `accelerate`, and `torch` are installed.
 
-Step 1: Download Sample WikiHow data
+### Step 1 — Download Sample WikiHow data
 - Use the included downloader script `01_data/download.sh` which fetches parquet shards used by the training script:
   - `bash 01_data/download.sh`
 - The script downloads files into the current working directory; the training script expects parquet files in `/opt/wikihow-ai-model/01_data` (or adjust `DATA_PATH` in `02_train/train_gpu.py`).
 
-Step 2: Train the model
+### Step 2 — Train the model
 - Training is performed with `02_train/train_gpu.py`.
 - The script expects a layout and default paths configured at the top of the file:
   - `MODEL_NAME` (default `HuggingFaceTB/SmolLM2-135M-Instruct`)
@@ -28,7 +28,7 @@ Step 2: Train the model
   - It loads parquet shards, expects `prompt` and `text` columns, concatenates them, tokenizes, and trains a LoRA adapter using `peft`.
   - The script moves the model to CUDA and uses `fp16` training flags. Adjust `BATCH_SIZE`, `EPOCHS`, and `MAX_LENGTH` in the script as needed.
 
-Step 3: Merge the model
+### Step 3 — Merge the model
 - After training, merge LoRA adapters into the base weights using `03_merge/merge.py`:
   - `python 03_merge/merge.py`
 - The script uses the following paths (edit inside the script if different):
@@ -38,13 +38,13 @@ Step 3: Merge the model
 - Behavior:
   - Loads the base model (FP16), applies the trained PEFT adapters, merges/adapts weights with `merge_and_unload()`, and saves a fully merged model and a repaired tokenizer compatible with downstream conversion.
 
-Step 4: Build GGUF model
+### Step 4 — Build GGUF model
 - Convert the merged Hugging Face format model into a `gguf` file usable by `llama.cpp` using the script `04_build_gguf/build.sh`:
   - `bash 04_build_gguf/build.sh`
 - The script clones `llama.cpp`, installs its Python requirements, and runs `convert_hf_to_gguf.py` to produce `/opt/wikihow-ai-model/wikihow-ai-model.gguf` (default `--outtype f16`).
 - Modify the `--outtype` or output path inside `build.sh` if you need a different precision or location.
 
-Step 5: Serve the model via `llama.cpp`
+### Step 5 — Serve the model via `llama.cpp`
 - The repository provides a simple serve script at `05_serve/serve.sh` that calls a `llama-server` binary pointing at the created `.gguf` file:
   - `bash 05_serve/serve.sh`
 - The default path in `serve.sh` is `/opt/llama.cpp/llama.cpp/build/bin/llama-server` and it expects the GGUF at `/opt/wikihow-ai-model/wikihow-ai-model.gguf`. Adjust these paths if your `llama.cpp` build or model file live elsewhere.
