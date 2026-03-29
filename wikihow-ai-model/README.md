@@ -58,5 +58,3 @@ Troubleshooting and Notes
 ### Download — Pretrained model
 - You can download the pretrained/converted model (if made available) from the Hugging Face repo:
   - `https://huggingface.co/ayoubismaili/wikihow-ai-model`
-
-If you want the README adapted to a custom path layout, tell me the paths you prefer and I will update it.
