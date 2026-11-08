@@ -53,7 +53,7 @@
 	<variableList>
 		<variable>
 			<name>STM32_REPOSITORY_LOC</name>
-			<value>file:/C:/Users/user/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0</value>
+			<value>file:/C:/Users/faceb/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0</value>
 		</variable>
 	</variableList>
 </projectDescription>
